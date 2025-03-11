@@ -1,0 +1,67 @@
+{
+  "name" : "CDQ Assets-1741682247990",
+  "sourceOrgId" : "13XZoAKi6ykjLvvPuHgv64",
+  "sourceOrgName" : "Capgemini",
+  "exportedObjects" : [ {
+    "objectGuid" : "4nNMTyqcmRQiC8uhfx4qM0",
+    "objectName" : "CG_CHAMPS",
+    "objectType" : "Project",
+    "path" : "/Explore",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "objectRefs" : [ ],
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Hackathon Global",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "6EYvUFy5NKFk0DTIDKYz66",
+    "objectName" : "Cleanse_payment",
+    "objectType" : "CLEANSE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "6EYvUFy5NKFk0DTIDKYz66"
+      },
+      "objectRefs" : [ ],
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "2TrBU75RGXNjvGkKEhJYO6",
+    "objectName" : "Cleanse_cust",
+    "objectType" : "CLEANSE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "2TrBU75RGXNjvGkKEhJYO6"
+      },
+      "objectRefs" : [ ],
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  } ]
+}

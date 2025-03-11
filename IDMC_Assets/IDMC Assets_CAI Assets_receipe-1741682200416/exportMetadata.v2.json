@@ -1,0 +1,88 @@
+{
+  "name" : "CAI Assets_receipe-1741682200416",
+  "sourceOrgId" : "13XZoAKi6ykjLvvPuHgv64",
+  "sourceOrgName" : "Capgemini",
+  "exportedObjects" : [ {
+    "objectGuid" : "lLRqHcaLaWudR4IqIRWE4s",
+    "objectName" : "AppConnection1",
+    "objectType" : "AI_CONNECTION",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "UGVtsDaaabdvhxi-gt-544360-2025-03-04T07:14:39.745Z::conn.xml"
+      },
+      "objectRefs" : [ "17sAkN79bXqcwQ5ZZJCJEL" ],
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "4nNMTyqcmRQiC8uhfx4qM0",
+    "objectName" : "CG_CHAMPS",
+    "objectType" : "Project",
+    "path" : "/Explore",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "objectRefs" : [ ],
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Hackathon Global",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "5xm50urymCchTw42WeNWmz",
+    "objectName" : "o2c flow_guide",
+    "objectType" : "GUIDE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "nNDACUtoVVVVVVV-gt-594463-2025-03-04T09:52:39.215Z::gt.xml"
+      },
+      "objectRefs" : [ "lLRqHcaLaWudR4IqIRWE4s" ],
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "17sAkN79bXqcwQ5ZZJCJEL",
+    "objectName" : "ServiceConnector_Webservice_test",
+    "objectType" : "AI_SERVICE_CONNECTOR",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "wvwNXHVOJ2oTVMT-gt-75378-2025-03-02T12:40:23.365Z::svc.xml"
+      },
+      "objectRefs" : [ ],
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  } ]
+}

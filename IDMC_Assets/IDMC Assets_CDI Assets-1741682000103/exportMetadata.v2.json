@@ -1,0 +1,712 @@
+{
+  "name" : "CDI Assets-1741682000103",
+  "sourceOrgId" : "13XZoAKi6ykjLvvPuHgv64",
+  "sourceOrgName" : "Capgemini",
+  "exportedObjects" : [ {
+    "objectGuid" : "4nNMTyqcmRQiC8uhfx4qM0",
+    "objectName" : "CG_CHAMPS",
+    "objectType" : "Project",
+    "path" : "/Explore",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "objectRefs" : [ ],
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Hackathon Global",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "aqteSF7gl2yiudFNEfVjG4",
+    "objectName" : "m_order_file_bronze",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X11700000000001L"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9", "aRwwe4SK0WviqxnwPJzDQv" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "6EYvUFy5NKFk0DTIDKYz66",
+    "objectName" : "Cleanse_payment",
+    "objectType" : "CLEANSE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "6EYvUFy5NKFk0DTIDKYz66"
+      },
+      "objectRefs" : [ ],
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "122jf2SXoSlb8HStHiVh8n",
+    "objectName" : "mct_order_silver_gold",
+    "objectType" : "MTT",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X10Z00000000000M"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9", "6foaYNZJEYGbfh8vym9Zoh", "5UPvFGxflRjfFzE339iH40" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "bSg0UBrfXM9cJj4yXsWHKf",
+    "objectName" : "mct_cust_silver_gold",
+    "objectType" : "MTT",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X10Z00000000000A"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9", "8M9zfH6NuYfeR0zugiOHGv", "6foaYNZJEYGbfh8vym9Zoh" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "b9EaOfqWZCpezBnHMTLSy8",
+    "objectName" : "m_cars_bronze_silver",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X11700000000001G"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "7KuE25xrdsGb9E2ZMUmEA2",
+    "objectName" : "mct_payment_raw_bronze",
+    "objectType" : "MTT",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X10Z00000000000C"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9", "aRwwe4SK0WviqxnwPJzDQv", "6foaYNZJEYGbfh8vym9Zoh", "4QCIVRC6EaKil20eeALkqS" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "5i7Lrp3Uq0CgEKPwDKwRo3",
+    "objectName" : "mct_cust_raw_bronze",
+    "objectType" : "MTT",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X10Z000000000008"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9", "aRwwe4SK0WviqxnwPJzDQv", "6foaYNZJEYGbfh8vym9Zoh", "7FAPL10xc49iyqvH67dDIy" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "aRkqICQkz1KeGhhUG97mQI",
+    "objectName" : "m_payment_bronze_silver",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X11700000000001K"
+      },
+      "objectRefs" : [ "6EYvUFy5NKFk0DTIDKYz66", "2Y1uWjzSks9k4LBBMssRo9" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "5SSyVzLlaHneR77RerrmSO",
+    "objectName" : "mct_cars_bronze_silver",
+    "objectType" : "MTT",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X10Z000000000006"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9", "b9EaOfqWZCpezBnHMTLSy8", "6foaYNZJEYGbfh8vym9Zoh" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "8M9zfH6NuYfeR0zugiOHGv",
+    "objectName" : "m_cust_silver_gold",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X11700000000001I"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "aRwwe4SK0WviqxnwPJzDQv",
+    "objectName" : "ff_gcs",
+    "objectType" : "Connection",
+    "path" : "/SYS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X10B000000000003"
+      },
+      "objectRefs" : [ "6foaYNZJEYGbfh8vym9Zoh" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "549VIdMf91VdG44Sy9BXMQ",
+    "objectName" : "mct_cars_silver_gold",
+    "objectType" : "MTT",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X10Z000000000007"
+      },
+      "objectRefs" : [ "0VbYhISFZPlkiCVta4JXAq", "2Y1uWjzSks9k4LBBMssRo9", "6foaYNZJEYGbfh8vym9Zoh" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "9Xm4VqwlEYNk1uIj1RjvgN",
+    "objectName" : "mct_cust_bronze_silver",
+    "objectType" : "MTT",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X10Z000000000009"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9", "6foaYNZJEYGbfh8vym9Zoh", "2RQgwwHLbnNj5hwUxLgE02" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "6foaYNZJEYGbfh8vym9Zoh",
+    "objectName" : "cg-hackathon",
+    "objectType" : "AgentGroup",
+    "path" : "/SYS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X125000000000006"
+      },
+      "objectRefs" : [ ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "7FAPL10xc49iyqvH67dDIy",
+    "objectName" : "m_cust_file_bronze",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X11700000000001C"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9", "aRwwe4SK0WviqxnwPJzDQv" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "2RQgwwHLbnNj5hwUxLgE02",
+    "objectName" : "m_cust_bronze_silver",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X11700000000001D"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9", "2TrBU75RGXNjvGkKEhJYO6" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "hqq4fc3iP83etpwTruRmyR",
+    "objectName" : "mct_payment_bronze_silver",
+    "objectType" : "MTT",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X10Z00000000000E"
+      },
+      "objectRefs" : [ "aRkqICQkz1KeGhhUG97mQI", "2Y1uWjzSks9k4LBBMssRo9", "6foaYNZJEYGbfh8vym9Zoh" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "2Y1uWjzSks9k4LBBMssRo9",
+    "objectName" : "conn_bigquery_bronze",
+    "objectType" : "Connection",
+    "path" : "/SYS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X10B000000000005"
+      },
+      "objectRefs" : [ "6foaYNZJEYGbfh8vym9Zoh" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "2AZiXV5c0QMkv8GpGxRZ0S",
+    "objectName" : "mct_order_file_bronze",
+    "objectType" : "MTT",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X10Z00000000000K"
+      },
+      "objectRefs" : [ "aqteSF7gl2yiudFNEfVjG4", "2Y1uWjzSks9k4LBBMssRo9", "aRwwe4SK0WviqxnwPJzDQv", "6foaYNZJEYGbfh8vym9Zoh" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "5UPvFGxflRjfFzE339iH40",
+    "objectName" : "m_order_silver_gold",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X11700000000001N"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "axHwUmHzUUhicVA4NDhEsC",
+    "objectName" : "m_payment_silver_gold",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X11700000000001J"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "0VbYhISFZPlkiCVta4JXAq",
+    "objectName" : "m_cars_silver_gold",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X11700000000001H"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "477jJJqKukvgMpdXmqZNuR",
+    "objectName" : "tf_o2c",
+    "objectType" : "TASKFLOW",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "zjBeE1KoJBUhtyc-gt-252327-2025-03-05T07:25:09.414Z::tf.xml"
+      },
+      "objectRefs" : [ "hqq4fc3iP83etpwTruRmyR", "122jf2SXoSlb8HStHiVh8n", "bSg0UBrfXM9cJj4yXsWHKf", "2AZiXV5c0QMkv8GpGxRZ0S", "7KuE25xrdsGb9E2ZMUmEA2", "5i7Lrp3Uq0CgEKPwDKwRo3", "5SSyVzLlaHneR77RerrmSO", "0cSdCwgqTaPiUhKcxuWMkH", "549VIdMf91VdG44Sy9BXMQ", "9Xm4VqwlEYNk1uIj1RjvgN", "5spVk4LIvoPkFGKBB7t5oS", "k4mm92KahYogtDQ3prPYmM" ],
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "jx3iC2CFmi5cDhd7IojzW7",
+    "objectName" : "m_cars_raw_bronze",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X11700000000001F"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9", "aRwwe4SK0WviqxnwPJzDQv" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "0cSdCwgqTaPiUhKcxuWMkH",
+    "objectName" : "mct_payment_silver_gold",
+    "objectType" : "MTT",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X10Z00000000000D"
+      },
+      "objectRefs" : [ "axHwUmHzUUhicVA4NDhEsC", "2Y1uWjzSks9k4LBBMssRo9", "6foaYNZJEYGbfh8vym9Zoh" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "4QCIVRC6EaKil20eeALkqS",
+    "objectName" : "m_payment_file_bronze",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X11700000000001E"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9", "aRwwe4SK0WviqxnwPJzDQv" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "5spVk4LIvoPkFGKBB7t5oS",
+    "objectName" : "mct_cars_raw_bronze",
+    "objectType" : "MTT",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X10Z000000000005"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9", "jx3iC2CFmi5cDhd7IojzW7", "aRwwe4SK0WviqxnwPJzDQv", "6foaYNZJEYGbfh8vym9Zoh" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "k4mm92KahYogtDQ3prPYmM",
+    "objectName" : "mct_order_bronze_silver",
+    "objectType" : "MTT",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X10Z00000000000L"
+      },
+      "objectRefs" : [ "aRkqICQkz1KeGhhUG97mQI", "2Y1uWjzSks9k4LBBMssRo9", "6foaYNZJEYGbfh8vym9Zoh" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "2TrBU75RGXNjvGkKEhJYO6",
+    "objectName" : "Cleanse_cust",
+    "objectType" : "CLEANSE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "2TrBU75RGXNjvGkKEhJYO6"
+      },
+      "objectRefs" : [ ],
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "Binary",
+        "documentState" : "VALID"
+      }
+    }
+  } ]
+}

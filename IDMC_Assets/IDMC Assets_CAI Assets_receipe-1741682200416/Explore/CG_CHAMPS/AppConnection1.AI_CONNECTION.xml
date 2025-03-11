@@ -1,0 +1,45 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>UGVtsDaaabdvhxi-gt-544360-2025-03-04T07:14:39.745Z::conn.xml</types1:EntryId>
+      <types1:Name>AppConnection1</types1:Name>
+      <types1:ParentFlowIds>5seBfWoAXUCZ4nz-gt-1496500-2025-03-07T16:24:26.907Z::gt.xml,beINciZBpDUQbgd-gt-1851513-2025-03-08T05:45:16.027Z::gt.xml,mu6lS01BchMYeOm-gt-551779-2025-03-04T07:15:44.208Z::pd.xml,nNDACUtoVVVVVVV-gt-594463-2025-03-04T09:52:39.215Z::gt.xml,SINciZBpDUQbgdw-gt-725099-2025-03-04T15:50:56.72Z::gt.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+connection</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>CG_Champs</types1:CreatedBy>
+      <types1:CreationDate>2025-03-04T07:14:40Z</types1:CreationDate>
+      <types1:ModifiedBy>CG_Champs</types1:ModifiedBy>
+      <types1:ModificationDate>2025-03-04T09:25:39Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>CG_Champs</types1:PublishedBy>
+      <types1:PublicationDate>2025-03-08T09:50:56Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/rt.connection/AppConnection1/AppConnection1.conn.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <connection xmlns="http://schemas.informatica.com/socrates/data-services/2014/04/avosConnections.xsd"
+                     displayName="AppConnection1"
+                     label="AppConnection1"
+                     name="AppConnection1">
+            <description/>
+            <tags/>
+            <agent/>
+            <businessConnector xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
+                               agentOnly="false"
+                               connectorPath="project:/rt.connector/ServiceConnector_Webservice_test/ServiceConnector_Webservice_test_svcDef.xml"
+                               guid="17sAkN79bXqcwQ5ZZJCJEL"
+                               name="ServiceConnector_Webservice_test"
+                               supportsConnectionTest="false"
+                               uuid="9b14f467-fd25-414e-9a1e-3ac56a19856e">
+               <description/>
+            </businessConnector>
+         </connection>
+      </types1:Entry>
+      <types1:GUID>lLRqHcaLaWudR4IqIRWE4s</types1:GUID>
+      <types1:DisplayName>AppConnection1</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2025-03-11T08:37:19.753Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

@@ -1,0 +1,472 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>nNDACUtoVVVVVVV-gt-594463-2025-03-04T09:52:39.215Z::gt.xml</types1:EntryId>
+      <types1:Name>o2c_flow_guide</types1:Name>
+      <types1:MimeType>application/xml+screenflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>CG_Champs</types1:CreatedBy>
+      <types1:CreationDate>2025-03-04T09:52:39Z</types1:CreationDate>
+      <types1:ModifiedBy>CG_Champs</types1:ModifiedBy>
+      <types1:ModificationDate>2025-03-08T14:03:30Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>CG_Champs</types1:PublishedBy>
+      <types1:PublicationDate>2025-03-08T14:03:34Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/sf.o2c_flow_guide/o2c_flow_guide.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <avosScreenflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                         xmlns:list="urn:activevos:spi:list:functions"
+                         allowRestart="true"
+                         displayName="o2c flow_guide"
+                         doneOnEndStep="false"
+                         name="o2c_flow_guide"
+                         runAsUser="$current">
+            <description/>
+            <appliesTo/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="null" name="input" required="true" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="response" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="cust id_output" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="salesid_output" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </output>
+            <runOn target="desktop"/>
+            <notes/>
+            <deployment/>
+            <sendFeedback>
+               <emailTo/>
+            </sendFeedback>
+            <flow>
+               <startScreen id="a15xm50urymCchTw42WeNWmz-start-vab8b3adc-41ce-40ad-9536-179b0e7edb4f">
+                  <title>Start</title>
+                  <body contentType="text/html"/>
+                  <actions>
+                     <action alt=""
+                             id="i8b500958-56cf-4a6d-9b70-be914f015155"
+                             targetScreen="a15xm50urymCchTw42WeNWmz-Assignment240bc552-7f21-4d7e-bde0-e8b66c1af841">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="true"/>
+               </startScreen>
+               <screen id="a15xm50urymCchTw42WeNWmz-Screendf64ffc4-490a-4eb5-96bd-3261fa697516">
+                  <title>Request Page !</title>
+                  <body contentType="text/html">&lt;p&gt;&lt;span style="font-size: 36pt; color: rgb(0, 0, 0); background-color: rgb(230, 126, 35);"&gt;&lt;strong&gt;Welcome to O2C Request page !!!&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 36pt; color: rgb(0, 0, 0); background-color: rgb(194, 224, 244);"&gt;&lt;strong&gt;Interactive Chatbot&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table style="border-collapse: collapse; width: 64.8256%;" border="1"&gt;&lt;colgroup&gt;&lt;col style="width: 37.703%;"&gt;&lt;col style="width: 62.297%;"&gt;&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;span style="font-size: 24pt; background-color: rgb(206, 212, 217);"&gt;&lt;strong&gt;Enter your input :&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input name="input.input" type="text" value="input (input)"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;img style="width: 390px; height: 390px; float: left;" title="Chatbot-22837.jpeg" src="../../../activevos-central/13XZoAKi6ykjLvvPuHgv64/avccatalog/_aeavcc_20250305194431/project:/13XZoAKi6ykjLvvPuHgv64/socrates.user.contributed.resources/resources/Chatbot-22837.jpeg" alt="Chatbot-22837.jpeg"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt=""
+                             id="a3716bdf4-5e6d-484e-93b8-e8adea132ab7"
+                             targetScreen="a15xm50urymCchTw42WeNWmz-Service75a952de-103d-4294-915f-199f9c731735">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="input.input"
+                                     readonly="false"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="a15xm50urymCchTw42WeNWmz-Screend2c0940d-095a-47e3-b95b-892e35f8f53c">
+                  <title>Response Page !</title>
+                  <body contentType="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: rgb(0, 0, 0); background-color: rgb(230, 126, 35); font-size: 36pt;"&gt;&lt;strong&gt;Below is the response to your Request !!!&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table style="border-collapse: collapse; width: 47.9494%;" border="1"&gt;&lt;colgroup&gt;&lt;col style="width: 18.6323%;"&gt;&lt;col style="width: 81.3583%;"&gt;&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;span style="font-size: 24pt; background-color: rgb(206, 212, 217);"&gt;&lt;strong&gt;Response&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.webservice_response" readonly="readonly" type="text" value="webservice_response (output)"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;img style="width: 330px; height: 330px; float: left;" title="Chatbot-22837.jpeg" src="../../../activevos-central/13XZoAKi6ykjLvvPuHgv64/avccatalog/_aeavcc_20250305194431/project:/13XZoAKi6ykjLvvPuHgv64/socrates.user.contributed.resources/resources/Chatbot-22837.jpeg" alt="Chatbot-22837.jpeg"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: rgb(0, 0, 0); background-color: rgb(194, 224, 244); font-size: 18pt;"&gt;&lt;strong&gt;Choose custom result &amp;amp; proceed next !&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</body>
+                  <actions>
+                     <action alt=""
+                             id="v200c2585-fe31-4e70-b62e-60a778fd322f"
+                             targetScreen="a15xm50urymCchTw42WeNWmz-Screen22444b6a-2eb5-403b-a00c-3417e4c92602">
+                        <text>custom results - Car Data</text>
+                     </action>
+                     <action alt=""
+                             id="e3ba59d78-c9ca-4b4e-aedc-f1d383de6db0"
+                             targetScreen="a15xm50urymCchTw42WeNWmz-Screen21f02e25-a218-41fb-b892-309b4c8f5ed9">
+                        <text>custom results - Order Data</text>
+                     </action>
+                     <action alt=""
+                             id="h60496ccf-3627-4500-af07-3eefc15a8aaa"
+                             targetScreen="a15xm50urymCchTw42WeNWmz-Screendabccb9a-c375-4a93-b088-6bc920dc2c62">
+                        <text>custom results - Payments Data</text>
+                     </action>
+                     <action alt=""
+                             id="iabe09fae-76dc-4b39-9a4a-a997d4800633"
+                             targetScreen="a15xm50urymCchTw42WeNWmz-Screend2a9aa23-fff2-4a19-8bf5-f73946d0b8d6">
+                        <text>custom results - Customer Data</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="output.webservice_response"
+                                     readonly="true"
+                                     required="false"
+                                     type="string">
+                        <options/>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="a15xm50urymCchTw42WeNWmz-Screen22444b6a-2eb5-403b-a00c-3417e4c92602">
+                  <title>Car Page !</title>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt=""
+                             id="n3ece6cc8-8a95-4ad5-8c48-58a733ee014d"
+                             targetScreen="c780911c1-a228-486f-a010-85eca71ba968">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </screen>
+               <screen id="a15xm50urymCchTw42WeNWmz-Screen21f02e25-a218-41fb-b892-309b4c8f5ed9">
+                  <title>Order Page !</title>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt=""
+                             id="o66a03d9f-2807-4bea-9630-24de6b4529b1"
+                             targetScreen="c780911c1-a228-486f-a010-85eca71ba968">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </screen>
+               <screen id="a15xm50urymCchTw42WeNWmz-Screendabccb9a-c375-4a93-b088-6bc920dc2c62">
+                  <title>Payment Page !</title>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt=""
+                             id="w0e9eb45c-2df4-4392-a8e8-c76589ab1b79"
+                             targetScreen="c780911c1-a228-486f-a010-85eca71ba968">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </screen>
+               <screen id="a15xm50urymCchTw42WeNWmz-Screend2a9aa23-fff2-4a19-8bf5-f73946d0b8d6">
+                  <title>Customer Page !</title>
+                  <body contentType="text/html">&lt;p&gt;&lt;span style="font-size: 36pt; color: rgb(0, 0, 0); background-color: rgb(230, 126, 35);"&gt;&lt;strong&gt;Welcome to request page for customer details !!!&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 24pt; color: rgb(230, 126, 35);"&gt;&lt;strong&gt;O2C Request&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table style="border-collapse: collapse; width: 64.8256%;" border="1"&gt;&lt;colgroup&gt;&lt;col style="width: 37.703%;"&gt;&lt;col style="width: 62.297%;"&gt;&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;span style="font-size: 24pt; background-color: rgb(206, 212, 217);"&gt;&lt;strong&gt;Enter your input :&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input name="input.input" type="text" value="input (input)"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img style="width: 405px; height: 435px; float: left;" title="scfu-8.jpg" src="../../../activevos-central/13XZoAKi6ykjLvvPuHgv64/avccatalog/_aeavcc_20250305194431/project:/com.activevos.cumulus.cloud.extend.playbook.resources/scfu/scfu-8.jpg" alt="scfu-8.jpg"&gt;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt=""
+                             id="fba18fb6e-673f-4250-90c5-063f42e594fd"
+                             targetScreen="a15xm50urymCchTw42WeNWmz-Service62c0afcf-88d2-497d-a6a4-46b41ff305fd">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="input.input"
+                                     readonly="false"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="required">false</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <screen id="Screen8b7b6190-45ab-4876-9234-a2fe82ab2b04">
+                  <title>Response page for customer Details ! 1</title>
+                  <body contentType="text/html">&lt;p&gt;&lt;span style="font-size: 24pt; color: rgb(0, 0, 0); background-color: rgb(230, 126, 35);"&gt;&lt;strong&gt;&lt;span style="font-size: 36pt; background-color: rgb(230, 126, 35);"&gt;Below is the response for your request !!!&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table style="border-collapse: collapse; width: 117.959%; height: 142px;" border="1"&gt;&lt;colgroup&gt;&lt;col style="width: 11.6314%;"&gt;&lt;col style="width: 11.6314%;"&gt;&lt;col style="width: 7.3095%;"&gt;&lt;col style="width: 11.2581%;"&gt;&lt;col style="width: 11.6314%;"&gt;&lt;col style="width: 11.6314%;"&gt;&lt;col style="width: 11.6314%;"&gt;&lt;col style="width: 11.6314%;"&gt;&lt;col style="width: 11.6314%;"&gt;&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr style="height: 16.8px;"&gt;
+&lt;td style="height: 16.8px;"&gt;&lt;span style="font-size: 18pt;"&gt;Customer ID&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;&lt;span style="font-size: 18pt;"&gt;Customer&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 18pt;"&gt;First name&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p&gt;&lt;span style="font-size: 18pt;"&gt;Customer&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 18pt;"&gt;Lastname&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="height: 16.8px;"&gt;&lt;span style="font-size: 18pt;"&gt;Customer Phone&lt;/span&gt;&lt;/td&gt;
+&lt;td style="height: 16.8px;"&gt;&lt;span style="font-size: 18pt;"&gt;Customer Email&lt;/span&gt;&lt;/td&gt;
+&lt;td style="height: 16.8px;"&gt;&lt;span style="font-size: 18pt;"&gt;Customer City&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span style="font-size: 18pt;"&gt;Customer Country&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span style="font-size: 18pt;"&gt;Customer State&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span style="font-size: 18pt;"&gt;Customer Address&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 39.9938px;"&gt;
+&lt;td style="height: 39.9938px;"&gt;&lt;input class="" style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.custid_output" readonly="readonly" type="text" value="custid_output (output)"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.Cust_first_name" readonly="readonly" type="text" value="Cust_first_name (output)"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.Cust_last_name" readonly="readonly" type="text" value="Cust_last_name (output)"&gt;&lt;/td&gt;
+&lt;td style="height: 39.9938px;"&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.Cust_phone" readonly="readonly" type="text" value="Cust_phone (output)"&gt;&lt;/td&gt;
+&lt;td style="height: 39.9938px;"&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.Cust_email" readonly="readonly" type="text" value="Cust_email (output)"&gt;&lt;/td&gt;
+&lt;td style="height: 39.9938px;"&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.Cust_city" readonly="readonly" type="text" value="Cust_city (output)"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.Cust_country" readonly="readonly" type="text" value="Cust_country (output)"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.Cust_state" readonly="readonly" type="text" value="Cust_state (output)"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input style="-moz-appearance: none; background-color: lightgrey; border: none;" name="output.Cust_Address" readonly="readonly" type="text" value="Cust_Address (output)"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;img style="width: 339px; height: 365px; float: left;" title="scfu-7.jpg" src="../../../activevos-central/13XZoAKi6ykjLvvPuHgv64/avccatalog/_aeavcc_20250305194431/project:/com.activevos.cumulus.cloud.extend.playbook.resources/scfu/scfu-7.jpg" alt="scfu-7.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 24pt; background-color: rgb(230, 126, 35); color: rgb(0, 0, 0);"&gt;&lt;strong&gt;Thank you !!!&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</body>
+                  <actionPrompt/>
+                  <actions>
+                     <action alt=""
+                             id="p0d76445c-ae34-4a22-8d1f-ab241d1e3259"
+                             targetScreen="c780911c1-a228-486f-a010-85eca71ba968">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+                  <screenData skipIfRequiredFilled="false">
+                     <screenDataItem name="output.custid_output"
+                                     readonly="true"
+                                     required="false"
+                                     type="text">
+                        <options>
+                           <option name="defaultvalue" source="field">output.customerID</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="output.Cust_first_name"
+                                     readonly="true"
+                                     required="false"
+                                     type="string">
+                        <options/>
+                     </screenDataItem>
+                     <screenDataItem name="output.Cust_last_name"
+                                     readonly="true"
+                                     required="false"
+                                     type="string">
+                        <options/>
+                     </screenDataItem>
+                     <screenDataItem name="output.Cust_phone"
+                                     readonly="true"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="defaultvalue" source="field">output.Cust_phone</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="output.Cust_email"
+                                     readonly="true"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="defaultvalue" source="field">output.Cust_email</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="output.Cust_city"
+                                     readonly="true"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="defaultvalue" source="field">output.Cust_city</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="output.Cust_country"
+                                     readonly="true"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="defaultvalue" source="field">output.Cust_country</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="output.Cust_state"
+                                     readonly="true"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="defaultvalue" source="field">output.Cust_state</option>
+                        </options>
+                     </screenDataItem>
+                     <screenDataItem name="output.Cust_Address"
+                                     readonly="true"
+                                     required="false"
+                                     type="string">
+                        <options>
+                           <option name="defaultvalue" source="field">output.Cust_Address</option>
+                        </options>
+                     </screenDataItem>
+                  </screenData>
+               </screen>
+               <service id="a15xm50urymCchTw42WeNWmz-Service75a952de-103d-4294-915f-199f9c731735">
+                  <title>Send Prompt</title>
+                  <serviceName>AppConnection1:Webservice_test</serviceName>
+                  <serviceGUID>lLRqHcaLaWudR4IqIRWE4s</serviceGUID>
+                  <serviceInput>
+                     <parameter name="prompt" source="field">input.input</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt=""
+                             id="v3a10c4e8-b523-4d80-8fd9-6d43cfe525a6"
+                             targetScreen="a15xm50urymCchTw42WeNWmz-Assignmentb8e08719-3ea9-4813-be59-b91455345b11">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <service id="a15xm50urymCchTw42WeNWmz-Service62c0afcf-88d2-497d-a6a4-46b41ff305fd">
+                  <title>Send Prompt - Customer</title>
+                  <serviceName>AppConnection1:Webservice_test</serviceName>
+                  <serviceGUID>lLRqHcaLaWudR4IqIRWE4s</serviceGUID>
+                  <serviceInput>
+                     <parameter name="prompt" source="field">input.input</parameter>
+                  </serviceInput>
+                  <actions>
+                     <action alt=""
+                             id="s1e971271-5886-40b9-aac7-5dbd01922def"
+                             targetScreen="a15xm50urymCchTw42WeNWmz-Assignmentac4efc56-4da0-43a9-b6d7-ea71c2c67dc8">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </service>
+               <endScreen id="a15xm50urymCchTw42WeNWmz-end-h82392e65-833f-4802-aebd-c2cbc3cc96e5">
+                  <title>End</title>
+                  <body contentType="text/html"/>
+                  <redirectTo type="current_object"/>
+                  <screenActionLabel>
+                     <text/>
+                  </screenActionLabel>
+               </endScreen>
+               <empty gatewayType="exclusive" id="c780911c1-a228-486f-a010-85eca71ba968">
+                  <title>Response Page !</title>
+                  <actions>
+                     <action alt=""
+                             id="z0e4721b4-9562-47ae-ada6-d3a80871da64"
+                             targetScreen="a15xm50urymCchTw42WeNWmz-end-h82392e65-833f-4802-aebd-c2cbc3cc96e5">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </empty>
+               <assignment id="a15xm50urymCchTw42WeNWmz-Assignment240bc552-7f21-4d7e-bde0-e8b66c1af841">
+                  <title>Assignment to input, cust_id input</title>
+                  <operation source="field" to="input.input">input.input</operation>
+                  <actions>
+                     <action alt=""
+                             id="r71c5f790-5d07-4eb9-88e8-576f6f3c9f64"
+                             targetScreen="a15xm50urymCchTw42WeNWmz-Screendf64ffc4-490a-4eb5-96bd-3261fa697516">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+               <assignment id="a15xm50urymCchTw42WeNWmz-Assignmentb8e08719-3ea9-4813-be59-b91455345b11">
+                  <title>Assignment to response, cust id_output, etc,</title>
+                  <operation source="field" to="output.response">output.webservice_response</operation>
+                  <operation source="field" to="output.cust id_output">output.customerID</operation>
+                  <actions>
+                     <action alt=""
+                             id="bbf3b4655-1031-4940-9baa-d34c676f0b5c"
+                             targetScreen="a15xm50urymCchTw42WeNWmz-Screend2c0940d-095a-47e3-b95b-892e35f8f53c">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+               <assignment id="a15xm50urymCchTw42WeNWmz-Assignmentac4efc56-4da0-43a9-b6d7-ea71c2c67dc8">
+                  <title>Assignment to response, cust id_output, etc, 1</title>
+                  <operation source="field" to="output.response">output.webservice_response</operation>
+                  <operation source="field" to="output.cust id_output">output.customerID</operation>
+                  <operation source="field" to="output.executequery">output.executequery</operation>
+                  <operation source="field" to="output.customerID">output.customerID</operation>
+                  <operation source="field" to="output.Cust_phone">output.Cust_phone</operation>
+                  <operation source="field" to="output.Cust_Address">output.Cust_Address</operation>
+                  <operation source="field" to="output.Cust_city">output.Cust_city</operation>
+                  <operation source="field" to="output.Cust_country">output.Cust_country</operation>
+                  <operation source="field" to="output.Cust_email">output.Cust_email</operation>
+                  <operation source="field" to="output.Cust_state">output.Cust_state</operation>
+                  <operation source="field" to="output.Cust_zipcode">output.Cust_zipcode</operation>
+                  <operation source="field" to="output.Cust_first_name">output.Cust_first_name</operation>
+                  <operation source="field" to="output.Cust_last_name">output.Cust_last_name</operation>
+                  <actions>
+                     <action alt=""
+                             id="dd1523613-b75d-40c4-9ad4-953ce5354a1a"
+                             targetScreen="Screen8b7b6190-45ab-4876-9234-a2fe82ab2b04">
+                        <text>Continue</text>
+                     </action>
+                  </actions>
+               </assignment>
+            </flow>
+         </avosScreenflow>
+      </types1:Entry>
+      <types1:GUID>5xm50urymCchTw42WeNWmz</types1:GUID>
+      <types1:DisplayName>o2c flow_guide</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2025-03-11T08:37:19.792Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

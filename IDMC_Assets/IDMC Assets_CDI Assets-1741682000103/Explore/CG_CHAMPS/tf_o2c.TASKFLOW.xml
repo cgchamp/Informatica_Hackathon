@@ -1,0 +1,1297 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>zjBeE1KoJBUhtyc-gt-252327-2025-03-05T07:25:09.414Z::tf.xml</types1:EntryId>
+      <types1:Name>tf_o2c</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>CG_Champs</types1:CreatedBy>
+      <types1:CreationDate>2025-03-05T07:25:09Z</types1:CreationDate>
+      <types1:ModifiedBy>CG_Champs</types1:ModifiedBy>
+      <types1:ModificationDate>2025-03-11T08:15:03Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>CG_Champs</types1:PublishedBy>
+      <types1:PublicationDate>2025-03-11T08:15:30Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/tf.tf_o2c/tf_o2c.tf.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   displayName="tf_o2c"
+                   name="tf_o2c"
+                   overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <tempFields>
+               <field description=""
+                      name="Cars data from file to bronze layer"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mct-cars-raw-bronze-5spVk4LIvoPkFGKBB7t5oS</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="Customer data from file to bronze layer"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mct-cust-raw-bronze-5i7Lrp3Uq0CgEKPwDKwRo3</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="Cars data from bronze to silver layer"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mct-cars-bronze-silver-5SSyVzLlaHneR77RerrmSO</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="Cars data from silver to gold layer"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mct-cars-silver-gold-549VIdMf91VdG44Sy9BXMQ</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="Customer data from bronze to silver layer"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mct-cust-bronze-silver-9Xm4VqwlEYNk1uIj1RjvgN</option>
+                  </options>
+               </field>
+               <field description=""
+                      name="Customer data from silver to gold layer"
+                      type="reference">
+                  <options>
+                     <option name="referenceTo">$po:mct-cust-silver-gold-bSg0UBrfXM9cJj4yXsWHKf</option>
+                  </options>
+               </field>
+               <field description="" name="Data Task 1" type="reference">
+                  <options>
+                     <option name="failOnNotRun">false</option>
+                     <option name="failOnFault">false</option>
+                     <option name="referenceTo">$po:mct-payment-raw-bronze-7KuE25xrdsGb9E2ZMUmEA2</option>
+                  </options>
+               </field>
+               <field description="" name="Data Task 4" type="reference">
+                  <options>
+                     <option name="failOnNotRun">false</option>
+                     <option name="failOnFault">false</option>
+                     <option name="referenceTo">$po:mct-order-file-bronze-2AZiXV5c0QMkv8GpGxRZ0S</option>
+                  </options>
+               </field>
+               <field description="" name="Data Task 2" type="reference">
+                  <options>
+                     <option name="failOnNotRun">false</option>
+                     <option name="failOnFault">false</option>
+                     <option name="referenceTo">$po:mct-payment-bronze-silver-hqq4fc3iP83etpwTruRmyR</option>
+                  </options>
+               </field>
+               <field description="" name="Data Task 3" type="reference">
+                  <options>
+                     <option name="failOnNotRun">false</option>
+                     <option name="failOnFault">false</option>
+                     <option name="referenceTo">$po:mct-payment-silver-gold-0cSdCwgqTaPiUhKcxuWMkH</option>
+                  </options>
+               </field>
+               <field description="" name="Data Task 5" type="reference">
+                  <options>
+                     <option name="failOnNotRun">false</option>
+                     <option name="failOnFault">false</option>
+                     <option name="referenceTo">$po:mct-order-bronze-silver-k4mm92KahYogtDQ3prPYmM</option>
+                  </options>
+               </field>
+               <field description="" name="Data Task 6" type="reference">
+                  <options>
+                     <option name="failOnNotRun">false</option>
+                     <option name="failOnFault">false</option>
+                     <option name="referenceTo">$po:mct-order-silver-gold-122jf2SXoSlb8HStHiVh8n</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">false</nvpair>
+            </extData>
+            <flow id="a">
+               <start id="b">
+                  <link id="j3wg4fhg" targetId="j3wg4fhf"/>
+               </start>
+               <container id="j3wg4fhf" type="parallel">
+                  <title>Parallel Paths 1</title>
+                  <flow id="j3wg4fhj">
+                     <eventContainer id="m7vldnpc">
+                        <service id="j3wg4fhu">
+                           <title>Cars data from file to bronze layer</title>
+                           <serviceName>ICSExecuteDataTask</serviceName>
+                           <serviceGUID/>
+                           <serviceInput>
+                              <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                              <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                              <parameter name="Task Name" source="constant" updatable="true">mct_cars_raw_bronze</parameter>
+                              <parameter name="GUID" source="constant" updatable="true">5spVk4LIvoPkFGKBB7t5oS</parameter>
+                              <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                              <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                              <parameter name="taskField" source="nested">
+                                 <operation source="field" to="mct-cars-raw-bronze-5spVk4LIvoPkFGKBB7t5oS">temp.Cars data from file to bronze layer</operation>
+                              </parameter>
+                           </serviceInput>
+                           <serviceOutput>
+                              <operation source="field"
+                                         to="temp.Cars data from file to bronze layer/output/Object_Name">Object Name</operation>
+                              <operation source="field"
+                                         to="temp.Cars data from file to bronze layer/output/Run_Id">Run Id</operation>
+                              <operation source="field"
+                                         to="temp.Cars data from file to bronze layer/output/Log_Id">Log Id</operation>
+                              <operation source="field"
+                                         to="temp.Cars data from file to bronze layer/output/Task_Id">Task Id</operation>
+                              <operation source="field"
+                                         to="temp.Cars data from file to bronze layer/output/Task_Status">Task Status</operation>
+                              <operation source="field"
+                                         to="temp.Cars data from file to bronze layer/output/Success_Source_Rows">Success Source Rows</operation>
+                              <operation source="field"
+                                         to="temp.Cars data from file to bronze layer/output/Failed_Source_Rows">Failed Source Rows</operation>
+                              <operation source="field"
+                                         to="temp.Cars data from file to bronze layer/output/Success_Target_Rows">Success Target Rows</operation>
+                              <operation source="field"
+                                         to="temp.Cars data from file to bronze layer/output/Failed_Target_Rows">Failed Target Rows</operation>
+                              <operation source="field"
+                                         to="temp.Cars data from file to bronze layer/output/Start_Time">Start Time</operation>
+                              <operation source="field"
+                                         to="temp.Cars data from file to bronze layer/output/End_Time">End Time</operation>
+                              <operation source="field"
+                                         to="temp.Cars data from file to bronze layer/output/Error_Message">Error Message</operation>
+                              <operation source="field"
+                                         to="temp.Cars data from file to bronze layer/output/TotalTransErrors">Total Transformation Errors</operation>
+                              <operation source="field"
+                                         to="temp.Cars data from file to bronze layer/output/FirstErrorCode">First Error Code</operation>
+                           </serviceOutput>
+                        </service>
+                        <link id="m7w3i878" targetId="m7w3i877"/>
+                        <events>
+                           <catch faultField="temp.Cars data from file to bronze layer/fault"
+                                  id="m7vldnpa"
+                                  interrupting="true"
+                                  name="error">
+                              <suspend/>
+                           </catch>
+                           <catch faultField="temp.Cars data from file to bronze layer/fault"
+                                  id="m7vldnpb"
+                                  interrupting="true"
+                                  name="warning"/>
+                        </events>
+                     </eventContainer>
+                     <container id="m7w3i877" type="exclusive">
+                        <title>Decision 1</title>
+                        <flow id="m7w3i87b">
+                           <eventContainer id="m7w3i889">
+                              <service id="m7w3i87m">
+                                 <title>Cars data from bronze to silver layer</title>
+                                 <serviceName>ICSExecuteDataTask</serviceName>
+                                 <serviceGUID/>
+                                 <serviceInput>
+                                    <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                    <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                                    <parameter name="Task Name" source="constant" updatable="true">mct_cars_bronze_silver</parameter>
+                                    <parameter name="GUID" source="constant" updatable="true">5SSyVzLlaHneR77RerrmSO</parameter>
+                                    <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                    <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                                    <parameter name="taskField" source="nested">
+                                       <operation source="field" to="mct-cars-bronze-silver-5SSyVzLlaHneR77RerrmSO">temp.Cars data from bronze to silver layer</operation>
+                                    </parameter>
+                                 </serviceInput>
+                                 <serviceOutput>
+                                    <operation source="field"
+                                               to="temp.Cars data from bronze to silver layer/output/Object_Name">Object Name</operation>
+                                    <operation source="field"
+                                               to="temp.Cars data from bronze to silver layer/output/Run_Id">Run Id</operation>
+                                    <operation source="field"
+                                               to="temp.Cars data from bronze to silver layer/output/Log_Id">Log Id</operation>
+                                    <operation source="field"
+                                               to="temp.Cars data from bronze to silver layer/output/Task_Id">Task Id</operation>
+                                    <operation source="field"
+                                               to="temp.Cars data from bronze to silver layer/output/Task_Status">Task Status</operation>
+                                    <operation source="field"
+                                               to="temp.Cars data from bronze to silver layer/output/Success_Source_Rows">Success Source Rows</operation>
+                                    <operation source="field"
+                                               to="temp.Cars data from bronze to silver layer/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                    <operation source="field"
+                                               to="temp.Cars data from bronze to silver layer/output/Success_Target_Rows">Success Target Rows</operation>
+                                    <operation source="field"
+                                               to="temp.Cars data from bronze to silver layer/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                    <operation source="field"
+                                               to="temp.Cars data from bronze to silver layer/output/Start_Time">Start Time</operation>
+                                    <operation source="field"
+                                               to="temp.Cars data from bronze to silver layer/output/End_Time">End Time</operation>
+                                    <operation source="field"
+                                               to="temp.Cars data from bronze to silver layer/output/Error_Message">Error Message</operation>
+                                    <operation source="field"
+                                               to="temp.Cars data from bronze to silver layer/output/TotalTransErrors">Total Transformation Errors</operation>
+                                    <operation source="field"
+                                               to="temp.Cars data from bronze to silver layer/output/FirstErrorCode">First Error Code</operation>
+                                 </serviceOutput>
+                              </service>
+                              <link id="m7w3i88i" targetId="m7w3i88h"/>
+                              <events>
+                                 <catch faultField="temp.Cars data from bronze to silver layer/fault"
+                                        id="m7vldnqg"
+                                        interrupting="true"
+                                        name="error">
+                                    <suspend/>
+                                 </catch>
+                                 <catch faultField="temp.Cars data from bronze to silver layer/fault"
+                                        id="m7vldnqh"
+                                        interrupting="true"
+                                        name="warning"/>
+                              </events>
+                           </eventContainer>
+                           <container id="m7w3i88h" type="exclusive">
+                              <title>Decision 2</title>
+                              <flow id="m7w3i88k">
+                                 <eventContainer id="m7w3i89l">
+                                    <service id="m7w3i88w">
+                                       <title>Cars data from silver to gold layer</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mct_cars_silver_gold</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">549VIdMf91VdG44Sy9BXMQ</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mct-cars-silver-gold-549VIdMf91VdG44Sy9BXMQ">temp.Cars data from silver to gold layer</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field"
+                                                     to="temp.Cars data from silver to gold layer/output/Object_Name">Object Name</operation>
+                                          <operation source="field"
+                                                     to="temp.Cars data from silver to gold layer/output/Run_Id">Run Id</operation>
+                                          <operation source="field"
+                                                     to="temp.Cars data from silver to gold layer/output/Log_Id">Log Id</operation>
+                                          <operation source="field"
+                                                     to="temp.Cars data from silver to gold layer/output/Task_Id">Task Id</operation>
+                                          <operation source="field"
+                                                     to="temp.Cars data from silver to gold layer/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.Cars data from silver to gold layer/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.Cars data from silver to gold layer/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.Cars data from silver to gold layer/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.Cars data from silver to gold layer/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.Cars data from silver to gold layer/output/Start_Time">Start Time</operation>
+                                          <operation source="field"
+                                                     to="temp.Cars data from silver to gold layer/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.Cars data from silver to gold layer/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.Cars data from silver to gold layer/output/TotalTransErrors">Total Transformation Errors</operation>
+                                          <operation source="field"
+                                                     to="temp.Cars data from silver to gold layer/output/FirstErrorCode">First Error Code</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.Cars data from silver to gold layer/fault"
+                                              id="m7vldnrl"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.Cars data from silver to gold layer/fault"
+                                              id="m7vldnrm"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="m7w3i88l" targetId="m7w3i88h" type="containerLink"/>
+                              </flow>
+                              <flow id="m7w3i88n">
+                                 <link id="m7w3i88o" targetId="m7w3i88h" type="containerLink"/>
+                              </flow>
+                              <link id="m7w3i88j" targetId="m7w3i88k" type="containerLink">
+                                 <condition source="formula">
+                                    <function name="contains">
+                                       <arg name="left">{$temp.Carsdatafrombronzetosilverlayer[1]/output[1]/Task_Status}</arg>
+                                       <arg name="right">1</arg>
+                                    </function>
+                                 </condition>
+                              </link>
+                              <link id="m7w3i88m" targetId="m7w3i88n" type="containerLink"/>
+                           </container>
+                           <link id="m7w3i87c" targetId="m7w3i877" type="containerLink"/>
+                        </flow>
+                        <flow id="m7w3i87e">
+                           <link id="m7w3i87f" targetId="m7w3i877" type="containerLink"/>
+                        </flow>
+                        <link id="m7w3i87a" targetId="m7w3i87b" type="containerLink">
+                           <condition source="formula">
+                              <function name="contains">
+                                 <arg name="left">{$temp.Carsdatafromfiletobronzelayer[1]/output[1]/Task_Status}</arg>
+                                 <arg name="right">1</arg>
+                              </function>
+                           </condition>
+                        </link>
+                        <link id="m7w3i87d" targetId="m7w3i87e" type="containerLink"/>
+                     </container>
+                     <link id="j3wg4fhk" targetId="j3wg4fhf" type="containerLink"/>
+                  </flow>
+                  <flow id="j3wg4fhm">
+                     <eventContainer id="m7vldnsu">
+                        <service id="j3wg4fi4">
+                           <title>Customer data from file to bronze layer</title>
+                           <serviceName>ICSExecuteDataTask</serviceName>
+                           <serviceGUID/>
+                           <serviceInput>
+                              <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                              <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                              <parameter name="Task Name" source="constant" updatable="true">mct_cust_raw_bronze</parameter>
+                              <parameter name="GUID" source="constant" updatable="true">5i7Lrp3Uq0CgEKPwDKwRo3</parameter>
+                              <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                              <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                              <parameter name="taskField" source="nested">
+                                 <operation source="field" to="mct-cust-raw-bronze-5i7Lrp3Uq0CgEKPwDKwRo3">temp.Customer data from file to bronze layer</operation>
+                              </parameter>
+                           </serviceInput>
+                           <serviceOutput>
+                              <operation source="field"
+                                         to="temp.Customer data from file to bronze layer/output/Object_Name">Object Name</operation>
+                              <operation source="field"
+                                         to="temp.Customer data from file to bronze layer/output/Run_Id">Run Id</operation>
+                              <operation source="field"
+                                         to="temp.Customer data from file to bronze layer/output/Log_Id">Log Id</operation>
+                              <operation source="field"
+                                         to="temp.Customer data from file to bronze layer/output/Task_Id">Task Id</operation>
+                              <operation source="field"
+                                         to="temp.Customer data from file to bronze layer/output/Task_Status">Task Status</operation>
+                              <operation source="field"
+                                         to="temp.Customer data from file to bronze layer/output/Success_Source_Rows">Success Source Rows</operation>
+                              <operation source="field"
+                                         to="temp.Customer data from file to bronze layer/output/Failed_Source_Rows">Failed Source Rows</operation>
+                              <operation source="field"
+                                         to="temp.Customer data from file to bronze layer/output/Success_Target_Rows">Success Target Rows</operation>
+                              <operation source="field"
+                                         to="temp.Customer data from file to bronze layer/output/Failed_Target_Rows">Failed Target Rows</operation>
+                              <operation source="field"
+                                         to="temp.Customer data from file to bronze layer/output/Start_Time">Start Time</operation>
+                              <operation source="field"
+                                         to="temp.Customer data from file to bronze layer/output/End_Time">End Time</operation>
+                              <operation source="field"
+                                         to="temp.Customer data from file to bronze layer/output/Error_Message">Error Message</operation>
+                              <operation source="field"
+                                         to="temp.Customer data from file to bronze layer/output/TotalTransErrors">Total Transformation Errors</operation>
+                              <operation source="field"
+                                         to="temp.Customer data from file to bronze layer/output/FirstErrorCode">First Error Code</operation>
+                           </serviceOutput>
+                        </service>
+                        <link id="m7w3i89w" targetId="m7w3i89v"/>
+                        <events>
+                           <catch faultField="temp.Customer data from file to bronze layer/fault"
+                                  id="m7vldnss"
+                                  interrupting="true"
+                                  name="error">
+                              <suspend/>
+                           </catch>
+                           <catch faultField="temp.Customer data from file to bronze layer/fault"
+                                  id="m7vldnst"
+                                  interrupting="true"
+                                  name="warning"/>
+                        </events>
+                     </eventContainer>
+                     <container id="m7w3i89v" type="exclusive">
+                        <title>Decision 3</title>
+                        <flow id="m7w3i89z">
+                           <eventContainer id="m7w3i8b5">
+                              <service id="m7w3i8ae">
+                                 <title>Customer data from bronze to silver layer</title>
+                                 <serviceName>ICSExecuteDataTask</serviceName>
+                                 <serviceGUID/>
+                                 <serviceInput>
+                                    <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                    <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                                    <parameter name="Task Name" source="constant" updatable="true">mct_cust_bronze_silver</parameter>
+                                    <parameter name="GUID" source="constant" updatable="true">9Xm4VqwlEYNk1uIj1RjvgN</parameter>
+                                    <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                    <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                                    <parameter name="taskField" source="nested">
+                                       <operation source="field" to="mct-cust-bronze-silver-9Xm4VqwlEYNk1uIj1RjvgN">temp.Customer data from bronze to silver layer</operation>
+                                    </parameter>
+                                 </serviceInput>
+                                 <serviceOutput>
+                                    <operation source="field"
+                                               to="temp.Customer data from bronze to silver layer/output/Object_Name">Object Name</operation>
+                                    <operation source="field"
+                                               to="temp.Customer data from bronze to silver layer/output/Run_Id">Run Id</operation>
+                                    <operation source="field"
+                                               to="temp.Customer data from bronze to silver layer/output/Log_Id">Log Id</operation>
+                                    <operation source="field"
+                                               to="temp.Customer data from bronze to silver layer/output/Task_Id">Task Id</operation>
+                                    <operation source="field"
+                                               to="temp.Customer data from bronze to silver layer/output/Task_Status">Task Status</operation>
+                                    <operation source="field"
+                                               to="temp.Customer data from bronze to silver layer/output/Success_Source_Rows">Success Source Rows</operation>
+                                    <operation source="field"
+                                               to="temp.Customer data from bronze to silver layer/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                    <operation source="field"
+                                               to="temp.Customer data from bronze to silver layer/output/Success_Target_Rows">Success Target Rows</operation>
+                                    <operation source="field"
+                                               to="temp.Customer data from bronze to silver layer/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                    <operation source="field"
+                                               to="temp.Customer data from bronze to silver layer/output/Start_Time">Start Time</operation>
+                                    <operation source="field"
+                                               to="temp.Customer data from bronze to silver layer/output/End_Time">End Time</operation>
+                                    <operation source="field"
+                                               to="temp.Customer data from bronze to silver layer/output/Error_Message">Error Message</operation>
+                                    <operation source="field"
+                                               to="temp.Customer data from bronze to silver layer/output/TotalTransErrors">Total Transformation Errors</operation>
+                                    <operation source="field"
+                                               to="temp.Customer data from bronze to silver layer/output/FirstErrorCode">First Error Code</operation>
+                                 </serviceOutput>
+                              </service>
+                              <link id="m7w3i8bi" targetId="m7w3i8bh"/>
+                              <events>
+                                 <catch faultField="temp.Customer data from bronze to silver layer/fault"
+                                        id="m7vldnty"
+                                        interrupting="true"
+                                        name="error">
+                                    <suspend/>
+                                 </catch>
+                                 <catch faultField="temp.Customer data from bronze to silver layer/fault"
+                                        id="m7vldntz"
+                                        interrupting="true"
+                                        name="warning"/>
+                              </events>
+                           </eventContainer>
+                           <container id="m7w3i8bh" type="exclusive">
+                              <title>Decision 4</title>
+                              <flow id="m7w3i8bk">
+                                 <eventContainer id="m7w3i8ct">
+                                    <service id="m7w3i8c0">
+                                       <title>Customer data from silver to gold layer</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mct_cust_silver_gold</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">bSg0UBrfXM9cJj4yXsWHKf</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mct-cust-silver-gold-bSg0UBrfXM9cJj4yXsWHKf">temp.Customer data from silver to gold layer</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field"
+                                                     to="temp.Customer data from silver to gold layer/output/Object_Name">Object Name</operation>
+                                          <operation source="field"
+                                                     to="temp.Customer data from silver to gold layer/output/Run_Id">Run Id</operation>
+                                          <operation source="field"
+                                                     to="temp.Customer data from silver to gold layer/output/Log_Id">Log Id</operation>
+                                          <operation source="field"
+                                                     to="temp.Customer data from silver to gold layer/output/Task_Id">Task Id</operation>
+                                          <operation source="field"
+                                                     to="temp.Customer data from silver to gold layer/output/Task_Status">Task Status</operation>
+                                          <operation source="field"
+                                                     to="temp.Customer data from silver to gold layer/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.Customer data from silver to gold layer/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.Customer data from silver to gold layer/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.Customer data from silver to gold layer/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field"
+                                                     to="temp.Customer data from silver to gold layer/output/Start_Time">Start Time</operation>
+                                          <operation source="field"
+                                                     to="temp.Customer data from silver to gold layer/output/End_Time">End Time</operation>
+                                          <operation source="field"
+                                                     to="temp.Customer data from silver to gold layer/output/Error_Message">Error Message</operation>
+                                          <operation source="field"
+                                                     to="temp.Customer data from silver to gold layer/output/TotalTransErrors">Total Transformation Errors</operation>
+                                          <operation source="field"
+                                                     to="temp.Customer data from silver to gold layer/output/FirstErrorCode">First Error Code</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.Customer data from silver to gold layer/fault"
+                                              id="m7vldnwe"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.Customer data from silver to gold layer/fault"
+                                              id="m7vldnwf"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="m7w3i8bl" targetId="m7w3i8bh" type="containerLink"/>
+                              </flow>
+                              <flow id="m7w3i8bn">
+                                 <link id="m7w3i8bo" targetId="m7w3i8bh" type="containerLink"/>
+                              </flow>
+                              <link id="m7w3i8bj" targetId="m7w3i8bk" type="containerLink">
+                                 <condition source="formula">
+                                    <function name="contains">
+                                       <arg name="left">{$temp.Customerdatafrombronzetosilverlayer[1]/output[1]/Task_Status}</arg>
+                                       <arg name="right">1</arg>
+                                    </function>
+                                 </condition>
+                              </link>
+                              <link id="m7w3i8bm" targetId="m7w3i8bn" type="containerLink"/>
+                           </container>
+                           <link id="m7w3i8a0" targetId="m7w3i89v" type="containerLink"/>
+                        </flow>
+                        <flow id="m7w3i8a2">
+                           <link id="m7w3i8a3" targetId="m7w3i89v" type="containerLink"/>
+                        </flow>
+                        <link id="m7w3i89y" targetId="m7w3i89z" type="containerLink">
+                           <condition source="formula">
+                              <function name="contains">
+                                 <arg name="left">{$temp.Customerdatafromfiletobronzelayer[1]/output[1]/Task_Status}</arg>
+                                 <arg name="right">1</arg>
+                              </function>
+                           </condition>
+                        </link>
+                        <link id="m7w3i8a1" targetId="m7w3i8a2" type="containerLink"/>
+                     </container>
+                     <link id="j3wg4fhn" targetId="j3wg4fhf" type="containerLink"/>
+                  </flow>
+                  <flow id="m847oh5x">
+                     <eventContainer id="m847ohmz">
+                        <service id="m847oh6r">
+                           <title>Data Task 1</title>
+                           <serviceName>ICSExecuteDataTask</serviceName>
+                           <serviceGUID/>
+                           <serviceInput>
+                              <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                              <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                              <parameter name="Task Name" source="constant" updatable="true">mct_payment_raw_bronze</parameter>
+                              <parameter name="GUID" source="constant" updatable="true">7KuE25xrdsGb9E2ZMUmEA2</parameter>
+                              <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                              <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                              <parameter name="taskField" source="nested">
+                                 <operation source="field" to="mct-payment-raw-bronze-7KuE25xrdsGb9E2ZMUmEA2">temp.Data Task 1</operation>
+                              </parameter>
+                           </serviceInput>
+                           <serviceOutput>
+                              <operation source="field" to="temp.Data Task 1/output/Object_Name">Object Name</operation>
+                              <operation source="field" to="temp.Data Task 1/output/Run_Id">Run Id</operation>
+                              <operation source="field" to="temp.Data Task 1/output/Log_Id">Log Id</operation>
+                              <operation source="field" to="temp.Data Task 1/output/Task_Id">Task Id</operation>
+                              <operation source="field" to="temp.Data Task 1/output/Task_Status">Task Status</operation>
+                              <operation source="field" to="temp.Data Task 1/output/Success_Source_Rows">Success Source Rows</operation>
+                              <operation source="field" to="temp.Data Task 1/output/Failed_Source_Rows">Failed Source Rows</operation>
+                              <operation source="field" to="temp.Data Task 1/output/Success_Target_Rows">Success Target Rows</operation>
+                              <operation source="field" to="temp.Data Task 1/output/Failed_Target_Rows">Failed Target Rows</operation>
+                              <operation source="field" to="temp.Data Task 1/output/Start_Time">Start Time</operation>
+                              <operation source="field" to="temp.Data Task 1/output/End_Time">End Time</operation>
+                              <operation source="field" to="temp.Data Task 1/output/Error_Message">Error Message</operation>
+                              <operation source="field" to="temp.Data Task 1/output/TotalTransErrors">Total Transformation Errors</operation>
+                              <operation source="field" to="temp.Data Task 1/output/FirstErrorCode">First Error Code</operation>
+                           </serviceOutput>
+                        </service>
+                        <link id="m847oh9k" targetId="m847oh9j"/>
+                        <events>
+                           <catch faultField="temp.Data Task 1/fault"
+                                  id="m847ohmx"
+                                  interrupting="true"
+                                  name="error">
+                              <suspend/>
+                           </catch>
+                           <catch faultField="temp.Data Task 1/fault"
+                                  id="m847ohmy"
+                                  interrupting="true"
+                                  name="warning"/>
+                        </events>
+                     </eventContainer>
+                     <container id="m847oh9j" type="exclusive">
+                        <title>Decision 5</title>
+                        <flow id="m847oh9n">
+                           <eventContainer id="m847ohi5">
+                              <service id="m847oha8">
+                                 <title>Data Task 2</title>
+                                 <serviceName>ICSExecuteDataTask</serviceName>
+                                 <serviceGUID/>
+                                 <serviceInput>
+                                    <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                    <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                                    <parameter name="Task Name" source="constant" updatable="true">mct_payment_bronze_silver</parameter>
+                                    <parameter name="GUID" source="constant" updatable="true">hqq4fc3iP83etpwTruRmyR</parameter>
+                                    <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                    <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                                    <parameter name="taskField" source="nested">
+                                       <operation source="field" to="mct-payment-bronze-silver-hqq4fc3iP83etpwTruRmyR">temp.Data Task 2</operation>
+                                    </parameter>
+                                 </serviceInput>
+                                 <serviceOutput>
+                                    <operation source="field" to="temp.Data Task 2/output/Object_Name">Object Name</operation>
+                                    <operation source="field" to="temp.Data Task 2/output/Run_Id">Run Id</operation>
+                                    <operation source="field" to="temp.Data Task 2/output/Log_Id">Log Id</operation>
+                                    <operation source="field" to="temp.Data Task 2/output/Task_Id">Task Id</operation>
+                                    <operation source="field" to="temp.Data Task 2/output/Task_Status">Task Status</operation>
+                                    <operation source="field" to="temp.Data Task 2/output/Success_Source_Rows">Success Source Rows</operation>
+                                    <operation source="field" to="temp.Data Task 2/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                    <operation source="field" to="temp.Data Task 2/output/Success_Target_Rows">Success Target Rows</operation>
+                                    <operation source="field" to="temp.Data Task 2/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                    <operation source="field" to="temp.Data Task 2/output/Start_Time">Start Time</operation>
+                                    <operation source="field" to="temp.Data Task 2/output/End_Time">End Time</operation>
+                                    <operation source="field" to="temp.Data Task 2/output/Error_Message">Error Message</operation>
+                                    <operation source="field" to="temp.Data Task 2/output/TotalTransErrors">Total Transformation Errors</operation>
+                                    <operation source="field" to="temp.Data Task 2/output/FirstErrorCode">First Error Code</operation>
+                                 </serviceOutput>
+                              </service>
+                              <link id="m847ohc0" targetId="m847ohbz"/>
+                              <events>
+                                 <catch faultField="temp.Data Task 2/fault"
+                                        id="m847ohi3"
+                                        interrupting="true"
+                                        name="error">
+                                    <suspend/>
+                                 </catch>
+                                 <catch faultField="temp.Data Task 2/fault"
+                                        id="m847ohi4"
+                                        interrupting="true"
+                                        name="warning"/>
+                              </events>
+                           </eventContainer>
+                           <container id="m847ohbz" type="exclusive">
+                              <title>Decision 6</title>
+                              <flow id="m847ohc3">
+                                 <eventContainer id="m847ohku">
+                                    <service id="m847ohcp">
+                                       <title>Data Task 3</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mct_payment_silver_gold</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">0cSdCwgqTaPiUhKcxuWMkH</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mct-payment-silver-gold-0cSdCwgqTaPiUhKcxuWMkH">temp.Data Task 3</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field" to="temp.Data Task 3/output/Object_Name">Object Name</operation>
+                                          <operation source="field" to="temp.Data Task 3/output/Run_Id">Run Id</operation>
+                                          <operation source="field" to="temp.Data Task 3/output/Log_Id">Log Id</operation>
+                                          <operation source="field" to="temp.Data Task 3/output/Task_Id">Task Id</operation>
+                                          <operation source="field" to="temp.Data Task 3/output/Task_Status">Task Status</operation>
+                                          <operation source="field" to="temp.Data Task 3/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field" to="temp.Data Task 3/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field" to="temp.Data Task 3/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field" to="temp.Data Task 3/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field" to="temp.Data Task 3/output/Start_Time">Start Time</operation>
+                                          <operation source="field" to="temp.Data Task 3/output/End_Time">End Time</operation>
+                                          <operation source="field" to="temp.Data Task 3/output/Error_Message">Error Message</operation>
+                                          <operation source="field" to="temp.Data Task 3/output/TotalTransErrors">Total Transformation Errors</operation>
+                                          <operation source="field" to="temp.Data Task 3/output/FirstErrorCode">First Error Code</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.Data Task 3/fault"
+                                              id="m847ohks"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.Data Task 3/fault"
+                                              id="m847ohkt"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="m847ohc4" targetId="m847ohbz" type="containerLink"/>
+                              </flow>
+                              <flow id="m847ohc6">
+                                 <link id="m847ohc7" targetId="m847ohbz" type="containerLink"/>
+                              </flow>
+                              <link id="m847ohc2" targetId="m847ohc3" type="containerLink">
+                                 <condition source="formula">
+                                    <function name="contains">
+                                       <arg name="left">{$temp.DataTask2[1]/output[1]/Task_Status}</arg>
+                                       <arg name="right">1</arg>
+                                    </function>
+                                 </condition>
+                              </link>
+                              <link id="m847ohc5" targetId="m847ohc6" type="containerLink"/>
+                           </container>
+                           <link id="m847oh9o" targetId="m847oh9j" type="containerLink"/>
+                        </flow>
+                        <flow id="m847oh9q">
+                           <link id="m847oh9r" targetId="m847oh9j" type="containerLink"/>
+                        </flow>
+                        <link id="m847oh9m" targetId="m847oh9n" type="containerLink">
+                           <condition source="formula">
+                              <function name="contains">
+                                 <arg name="left">{$temp.DataTask1[1]/output[1]/Task_Status}</arg>
+                                 <arg name="right">1</arg>
+                              </function>
+                           </condition>
+                        </link>
+                        <link id="m847oh9p" targetId="m847oh9q" type="containerLink"/>
+                     </container>
+                     <link id="m847oh5y" targetId="j3wg4fhf" type="containerLink"/>
+                  </flow>
+                  <flow id="m847oh6b">
+                     <eventContainer id="m847ohsj">
+                        <service id="m847oh85">
+                           <title>Data Task 4</title>
+                           <serviceName>ICSExecuteDataTask</serviceName>
+                           <serviceGUID/>
+                           <serviceInput>
+                              <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                              <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                              <parameter name="Task Name" source="constant" updatable="true">mct_order_file_bronze</parameter>
+                              <parameter name="GUID" source="constant" updatable="true">2AZiXV5c0QMkv8GpGxRZ0S</parameter>
+                              <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                              <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                              <parameter name="taskField" source="nested">
+                                 <operation source="field" to="mct-order-file-bronze-2AZiXV5c0QMkv8GpGxRZ0S">temp.Data Task 4</operation>
+                              </parameter>
+                           </serviceInput>
+                           <serviceOutput>
+                              <operation source="field" to="temp.Data Task 4/output/Object_Name">Object Name</operation>
+                              <operation source="field" to="temp.Data Task 4/output/Run_Id">Run Id</operation>
+                              <operation source="field" to="temp.Data Task 4/output/Log_Id">Log Id</operation>
+                              <operation source="field" to="temp.Data Task 4/output/Task_Id">Task Id</operation>
+                              <operation source="field" to="temp.Data Task 4/output/Task_Status">Task Status</operation>
+                              <operation source="field" to="temp.Data Task 4/output/Success_Source_Rows">Success Source Rows</operation>
+                              <operation source="field" to="temp.Data Task 4/output/Failed_Source_Rows">Failed Source Rows</operation>
+                              <operation source="field" to="temp.Data Task 4/output/Success_Target_Rows">Success Target Rows</operation>
+                              <operation source="field" to="temp.Data Task 4/output/Failed_Target_Rows">Failed Target Rows</operation>
+                              <operation source="field" to="temp.Data Task 4/output/Start_Time">Start Time</operation>
+                              <operation source="field" to="temp.Data Task 4/output/End_Time">End Time</operation>
+                              <operation source="field" to="temp.Data Task 4/output/Error_Message">Error Message</operation>
+                              <operation source="field" to="temp.Data Task 4/output/TotalTransErrors">Total Transformation Errors</operation>
+                              <operation source="field" to="temp.Data Task 4/output/FirstErrorCode">First Error Code</operation>
+                           </serviceOutput>
+                        </service>
+                        <link id="m847ohdq" targetId="m847ohdp"/>
+                        <events>
+                           <catch faultField="temp.Data Task 4/fault"
+                                  id="m847ohsh"
+                                  interrupting="true"
+                                  name="error">
+                              <suspend/>
+                           </catch>
+                           <catch faultField="temp.Data Task 4/fault"
+                                  id="m847ohsi"
+                                  interrupting="true"
+                                  name="warning"/>
+                        </events>
+                     </eventContainer>
+                     <container id="m847ohdp" type="exclusive">
+                        <title>Decision 7</title>
+                        <flow id="m847ohdt">
+                           <eventContainer id="m847ohvb">
+                              <service id="m847ohei">
+                                 <title>Data Task 5</title>
+                                 <serviceName>ICSExecuteDataTask</serviceName>
+                                 <serviceGUID/>
+                                 <serviceInput>
+                                    <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                    <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                                    <parameter name="Task Name" source="constant" updatable="true">mct_order_bronze_silver</parameter>
+                                    <parameter name="GUID" source="constant" updatable="true">k4mm92KahYogtDQ3prPYmM</parameter>
+                                    <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                    <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                                    <parameter name="taskField" source="nested">
+                                       <operation source="field" to="mct-order-bronze-silver-k4mm92KahYogtDQ3prPYmM">temp.Data Task 5</operation>
+                                    </parameter>
+                                 </serviceInput>
+                                 <serviceOutput>
+                                    <operation source="field" to="temp.Data Task 5/output/Object_Name">Object Name</operation>
+                                    <operation source="field" to="temp.Data Task 5/output/Run_Id">Run Id</operation>
+                                    <operation source="field" to="temp.Data Task 5/output/Log_Id">Log Id</operation>
+                                    <operation source="field" to="temp.Data Task 5/output/Task_Id">Task Id</operation>
+                                    <operation source="field" to="temp.Data Task 5/output/Task_Status">Task Status</operation>
+                                    <operation source="field" to="temp.Data Task 5/output/Success_Source_Rows">Success Source Rows</operation>
+                                    <operation source="field" to="temp.Data Task 5/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                    <operation source="field" to="temp.Data Task 5/output/Success_Target_Rows">Success Target Rows</operation>
+                                    <operation source="field" to="temp.Data Task 5/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                    <operation source="field" to="temp.Data Task 5/output/Start_Time">Start Time</operation>
+                                    <operation source="field" to="temp.Data Task 5/output/End_Time">End Time</operation>
+                                    <operation source="field" to="temp.Data Task 5/output/Error_Message">Error Message</operation>
+                                    <operation source="field" to="temp.Data Task 5/output/TotalTransErrors">Total Transformation Errors</operation>
+                                    <operation source="field" to="temp.Data Task 5/output/FirstErrorCode">First Error Code</operation>
+                                 </serviceOutput>
+                              </service>
+                              <link id="m847ohfn" targetId="m847ohfm"/>
+                              <events>
+                                 <catch faultField="temp.Data Task 5/fault"
+                                        id="m847ohv9"
+                                        interrupting="true"
+                                        name="error">
+                                    <suspend/>
+                                 </catch>
+                                 <catch faultField="temp.Data Task 5/fault"
+                                        id="m847ohva"
+                                        interrupting="true"
+                                        name="warning"/>
+                              </events>
+                           </eventContainer>
+                           <container id="m847ohfm" type="exclusive">
+                              <title>Decision 8</title>
+                              <flow id="m847ohfp">
+                                 <eventContainer id="m847ohy3">
+                                    <service id="m847ohgf">
+                                       <title>Data Task 6</title>
+                                       <serviceName>ICSExecuteDataTask</serviceName>
+                                       <serviceGUID/>
+                                       <serviceInput>
+                                          <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                                          <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                                          <parameter name="Task Name" source="constant" updatable="true">mct_order_silver_gold</parameter>
+                                          <parameter name="GUID" source="constant" updatable="true">122jf2SXoSlb8HStHiVh8n</parameter>
+                                          <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                                          <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                                          <parameter name="taskField" source="nested">
+                                             <operation source="field" to="mct-order-silver-gold-122jf2SXoSlb8HStHiVh8n">temp.Data Task 6</operation>
+                                          </parameter>
+                                       </serviceInput>
+                                       <serviceOutput>
+                                          <operation source="field" to="temp.Data Task 6/output/Object_Name">Object Name</operation>
+                                          <operation source="field" to="temp.Data Task 6/output/Run_Id">Run Id</operation>
+                                          <operation source="field" to="temp.Data Task 6/output/Log_Id">Log Id</operation>
+                                          <operation source="field" to="temp.Data Task 6/output/Task_Id">Task Id</operation>
+                                          <operation source="field" to="temp.Data Task 6/output/Task_Status">Task Status</operation>
+                                          <operation source="field" to="temp.Data Task 6/output/Success_Source_Rows">Success Source Rows</operation>
+                                          <operation source="field" to="temp.Data Task 6/output/Failed_Source_Rows">Failed Source Rows</operation>
+                                          <operation source="field" to="temp.Data Task 6/output/Success_Target_Rows">Success Target Rows</operation>
+                                          <operation source="field" to="temp.Data Task 6/output/Failed_Target_Rows">Failed Target Rows</operation>
+                                          <operation source="field" to="temp.Data Task 6/output/Start_Time">Start Time</operation>
+                                          <operation source="field" to="temp.Data Task 6/output/End_Time">End Time</operation>
+                                          <operation source="field" to="temp.Data Task 6/output/Error_Message">Error Message</operation>
+                                          <operation source="field" to="temp.Data Task 6/output/TotalTransErrors">Total Transformation Errors</operation>
+                                          <operation source="field" to="temp.Data Task 6/output/FirstErrorCode">First Error Code</operation>
+                                       </serviceOutput>
+                                    </service>
+                                    <events>
+                                       <catch faultField="temp.Data Task 6/fault"
+                                              id="m847ohy1"
+                                              interrupting="true"
+                                              name="error">
+                                          <suspend/>
+                                       </catch>
+                                       <catch faultField="temp.Data Task 6/fault"
+                                              id="m847ohy2"
+                                              interrupting="true"
+                                              name="warning"/>
+                                    </events>
+                                 </eventContainer>
+                                 <link id="m847ohfq" targetId="m847ohfm" type="containerLink"/>
+                              </flow>
+                              <flow id="m847ohfs">
+                                 <link id="m847ohft" targetId="m847ohfm" type="containerLink"/>
+                              </flow>
+                              <link id="m847ohfo" targetId="m847ohfp" type="containerLink">
+                                 <condition source="formula">
+                                    <function name="contains">
+                                       <arg name="left">{$temp.DataTask5[1]/output[1]/Task_Status}</arg>
+                                       <arg name="right">1</arg>
+                                    </function>
+                                 </condition>
+                              </link>
+                              <link id="m847ohfr" targetId="m847ohfs" type="containerLink"/>
+                           </container>
+                           <link id="m847ohdu" targetId="m847ohdp" type="containerLink"/>
+                        </flow>
+                        <flow id="m847ohdw">
+                           <link id="m847ohdx" targetId="m847ohdp" type="containerLink"/>
+                        </flow>
+                        <link id="m847ohds" targetId="m847ohdt" type="containerLink">
+                           <condition source="formula">
+                              <function name="contains">
+                                 <arg name="left">{$temp.DataTask4[1]/output[1]/Task_Status}</arg>
+                                 <arg name="right">1</arg>
+                              </function>
+                           </condition>
+                        </link>
+                        <link id="m847ohdv" targetId="m847ohdw" type="containerLink"/>
+                     </container>
+                     <link id="m847oh6c" targetId="j3wg4fhf" type="containerLink"/>
+                  </flow>
+                  <link id="j3wg4fhi" targetId="j3wg4fhj" type="containerLink"/>
+                  <link id="j3wg4fhl" targetId="j3wg4fhm" type="containerLink"/>
+                  <link id="m847oh5w" targetId="m847oh5x" type="containerLink"/>
+                  <link id="m847oh6a" targetId="m847oh6b" type="containerLink"/>
+                  <link id="j3wg4fhh" targetId="c"/>
+               </container>
+               <end id="c"/>
+            </flow>
+            <dependencies>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-cars-raw-bronze-5spVk4LIvoPkFGKBB7t5oS"
+                              isByCopy="true"
+                              name="mct-cars-raw-bronze-5spVk4LIvoPkFGKBB7t5oS">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Max Wait (Seconds)"
+                            name="Max_Wait"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-cust-raw-bronze-5i7Lrp3Uq0CgEKPwDKwRo3"
+                              isByCopy="true"
+                              name="mct-cust-raw-bronze-5i7Lrp3Uq0CgEKPwDKwRo3">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Max Wait (Seconds)"
+                            name="Max_Wait"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-cars-bronze-silver-5SSyVzLlaHneR77RerrmSO"
+                              isByCopy="true"
+                              name="mct-cars-bronze-silver-5SSyVzLlaHneR77RerrmSO">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Max Wait (Seconds)"
+                            name="Max_Wait"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-cars-silver-gold-549VIdMf91VdG44Sy9BXMQ"
+                              isByCopy="true"
+                              name="mct-cars-silver-gold-549VIdMf91VdG44Sy9BXMQ">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Max Wait (Seconds)"
+                            name="Max_Wait"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-cust-bronze-silver-9Xm4VqwlEYNk1uIj1RjvgN"
+                              isByCopy="true"
+                              name="mct-cust-bronze-silver-9Xm4VqwlEYNk1uIj1RjvgN">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Max Wait (Seconds)"
+                            name="Max_Wait"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-cust-silver-gold-bSg0UBrfXM9cJj4yXsWHKf"
+                              isByCopy="true"
+                              name="mct-cust-silver-gold-bSg0UBrfXM9cJj4yXsWHKf">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Max Wait (Seconds)"
+                            name="Max_Wait"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-payment-raw-bronze-7KuE25xrdsGb9E2ZMUmEA2"
+                              isByCopy="true"
+                              name="mct-payment-raw-bronze-7KuE25xrdsGb9E2ZMUmEA2">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Max Wait (Seconds)"
+                            name="Max_Wait"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-order-file-bronze-2AZiXV5c0QMkv8GpGxRZ0S"
+                              isByCopy="true"
+                              name="mct-order-file-bronze-2AZiXV5c0QMkv8GpGxRZ0S">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Max Wait (Seconds)"
+                            name="Max_Wait"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-payment-bronze-silver-hqq4fc3iP83etpwTruRmyR"
+                              isByCopy="true"
+                              name="mct-payment-bronze-silver-hqq4fc3iP83etpwTruRmyR">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Max Wait (Seconds)"
+                            name="Max_Wait"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-payment-silver-gold-0cSdCwgqTaPiUhKcxuWMkH"
+                              isByCopy="true"
+                              name="mct-payment-silver-gold-0cSdCwgqTaPiUhKcxuWMkH">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Max Wait (Seconds)"
+                            name="Max_Wait"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-order-bronze-silver-k4mm92KahYogtDQ3prPYmM"
+                              isByCopy="true"
+                              name="mct-order-bronze-silver-k4mm92KahYogtDQ3prPYmM">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Max Wait (Seconds)"
+                            name="Max_Wait"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="mct-order-silver-gold-122jf2SXoSlb8HStHiVh8n"
+                              isByCopy="true"
+                              name="mct-order-silver-gold-122jf2SXoSlb8HStHiVh8n">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Max Wait (Seconds)"
+                            name="Max_Wait"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+            </dependencies>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>477jJJqKukvgMpdXmqZNuR</types1:GUID>
+      <types1:DisplayName>tf_o2c</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2025-03-11T08:33:35.169Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

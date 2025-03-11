@@ -1,0 +1,115 @@
+{
+  "name" : "Data Profiling-1741681872956",
+  "sourceOrgId" : "13XZoAKi6ykjLvvPuHgv64",
+  "sourceOrgName" : "Capgemini",
+  "exportedObjects" : [ {
+    "objectGuid" : "4nNMTyqcmRQiC8uhfx4qM0",
+    "objectName" : "CG_CHAMPS",
+    "objectType" : "Project",
+    "path" : "/Explore",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "objectRefs" : [ ],
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "Hackathon Global",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "8Q82FIdzGpyjNxPJuo8HsC",
+    "objectName" : "Profile_Silver",
+    "objectType" : "PROFILE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "97604e6a-f537-400c-a203-bafbdf46f630"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9" ],
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "json",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "2Y1uWjzSks9k4LBBMssRo9",
+    "objectName" : "conn_bigquery_bronze",
+    "objectType" : "Connection",
+    "path" : "/SYS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X10B000000000005"
+      },
+      "objectRefs" : [ "6foaYNZJEYGbfh8vym9Zoh" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "6foaYNZJEYGbfh8vym9Zoh",
+    "objectName" : "cg-hackathon",
+    "objectType" : "AgentGroup",
+    "path" : "/SYS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01D4X125000000000006"
+      },
+      "objectRefs" : [ ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "0PBgVXlRW4UhVyj2ZTfJKZ",
+    "objectName" : "Profile_Bronze",
+    "objectType" : "PROFILE",
+    "path" : "/Explore/CG_CHAMPS",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "910f33eb-7e59-4b0b-a1aa-a96954549b15"
+      },
+      "objectRefs" : [ "2Y1uWjzSks9k4LBBMssRo9" ],
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "json",
+        "documentState" : "VALID"
+      }
+    }
+  } ]
+}

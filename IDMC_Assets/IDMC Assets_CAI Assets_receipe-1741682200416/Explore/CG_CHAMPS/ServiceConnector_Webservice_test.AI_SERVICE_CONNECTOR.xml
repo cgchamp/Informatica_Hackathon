@@ -1,0 +1,193 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>wvwNXHVOJ2oTVMT-gt-75378-2025-03-02T12:40:23.365Z::svc.xml</types1:EntryId>
+      <types1:Name>ServiceConnector_Webservice_test</types1:Name>
+      <types1:ParentFlowIds>UGVtsDaaabdvhxi-gt-544360-2025-03-04T07:14:39.745Z::conn.xml</types1:ParentFlowIds>
+      <types1:MimeType>application/xml+businesssconnector</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>CG_Champs</types1:CreatedBy>
+      <types1:CreationDate>2025-03-02T12:40:23Z</types1:CreationDate>
+      <types1:ModifiedBy>CG_Champs</types1:ModifiedBy>
+      <types1:ModificationDate>2025-03-08T09:10:55Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>CG_Champs</types1:PublishedBy>
+      <types1:PublicationDate>2025-03-08T09:12:57Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/rt.connector/ServiceConnector_Webservice_test/ServiceConnector_Webservice_test_svcDef.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <businessConnector xmlns="http://schemas.informatica.com/socrates/data-services/2014/05/business-connector-model.xsd"
+                            agentOnly="false"
+                            debug="false"
+                            displayName="ServiceConnector_Webservice_test"
+                            label=""
+                            name="ServiceConnector_Webservice_test"
+                            uuid="9b14f467-fd25-414e-9a1e-3ac56a19856e">
+            <description/>
+            <tags/>
+            <connectionAttributes xmlns="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"/>
+            <actions>
+               <action category=""
+                       failOnError="true"
+                       forSearch="false"
+                       label="Webservice_test"
+                       maxRedirects="100"
+                       name="Webservice_test"
+                       preemptiveAuth="true"
+                       responseEncoding="">
+                  <description/>
+                  <input>
+                     <parameter description=""
+                                label=""
+                                name="prompt"
+                                required="false"
+                                testWith="Give only unique customer detail who purchased cars on new year 2025 who lives in city Seattle"
+                                type="string"/>
+                  </input>
+                  <binding>
+                     <restSimpleBinding multiUsing="semicolonSeparated"
+                                        url="https://inferencebigqueryprod-129325489102.europe-west3.run.app/run_pipeline"
+                                        verb="POST">
+                        <mutualAuth enabled="false">
+                           <keyStore mode="file"/>
+                           <keyStorePassword/>
+                        </mutualAuth>
+                        <httpHeaders>
+                           <header name="Content-Type">application/json</header>
+                        </httpHeaders>
+                        <body>{{
+"prompt": "{$prompt}"
+}}</body>
+                     </restSimpleBinding>
+                  </binding>
+                  <output>
+                     <field description=""
+                            entireResponse="true"
+                            name="webservice_response"
+                            type="string"/>
+                     <field description=""
+                            name="response"
+                            property="response"
+                            type="string"/>
+                     <field description="" name="execute query" type="objectlist">
+                        <options>
+                           <option name="relationshipName">Child</option>
+                           <option name="referenceTo">$po:$any</option>
+                        </options>
+                        <xquery>{for $i in //records
+return
+&lt;execute_query&gt;
+   &lt;customer_id&gt;{$i//customer_id/text()}&lt;/customer_id&gt;
+&lt;/execute_query&gt;}</xquery>
+                     </field>
+                     <field description="" name="customerID" type="string">
+                        <xquery>{/root/execute_query/customer_id/text()} </xquery>
+                     </field>
+                     <field description="" name="Cust_phone" type="string">
+                        <xquery>{/root/execute_query/phone/text()} </xquery>
+                     </field>
+                     <field description="" name="Cust_Address" type="string">
+                        <xquery>{/root/execute_query/address/text()} </xquery>
+                     </field>
+                     <field description="" name="Cust_email" type="string">
+                        <xquery>{/root/execute_query/email/text()} </xquery>
+                     </field>
+                     <field description="" name="Cust_city" type="string">
+                        <xquery>{/root/execute_query/city/text()} </xquery>
+                     </field>
+                     <field description="" name="Cust_zipcode" type="string">
+                        <xquery>{/root/execute_query/zip_code/text()} </xquery>
+                     </field>
+                     <field description="" name="Cust_state" type="string">
+                        <xquery>{/root/execute_query/state/text()} </xquery>
+                     </field>
+                     <field description="" name="Cust_country" type="string">
+                        <xquery>{/root/execute_query/country/text()} </xquery>
+                     </field>
+                     <field description="" name="Cust_first_name" type="string">
+                        <xquery>{/root/execute_query/first_name/text()} </xquery>
+                     </field>
+                     <field description="" name="Cust_last_name" type="string">
+                        <xquery>{/root/execute_query/last_name/text()} </xquery>
+                     </field>
+                  </output>
+               </action>
+            </actions>
+            <objects>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              xmlns:aetgt="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
+                              isByCopy="true"
+                              name="root">
+                  <description>An automatically generated process object</description>
+                  <detail>
+                     <field name="cleaned_query"
+                            nullable="true"
+                            required="false"
+                            type="string">
+                        <options/>
+                     </field>
+                     <field name="execute_query"
+                            nullable="true"
+                            required="false"
+                            type="reference">
+                        <options>
+                           <option name="referenceTo">execute_query</option>
+                           <option name="relationshipName">Child</option>
+                        </options>
+                     </field>
+                  </detail>
+               </processObject>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              xmlns:aetgt="http://schemas.informatica.com/appmodules/screenflow/2014/04/avosConnectors.xsd"
+                              isByCopy="true"
+                              name="execute_query">
+                  <description>An automatically generated process object</description>
+                  <detail>
+                     <field name="customer_id"
+                            nullable="true"
+                            required="false"
+                            type="string"/>
+                     <field name="phone" nullable="true" required="false" type="string">
+                        <options/>
+                     </field>
+                     <field name="address" nullable="true" required="false" type="string">
+                        <options/>
+                     </field>
+                     <field name="email" nullable="true" required="false" type="string">
+                        <options/>
+                     </field>
+                     <field name="city" nullable="true" required="false" type="string">
+                        <options/>
+                     </field>
+                     <field name="state" nullable="true" required="false" type="string">
+                        <options/>
+                     </field>
+                     <field name="zip_code" nullable="true" required="false" type="string">
+                        <options/>
+                     </field>
+                     <field name="country" nullable="true" required="false" type="string">
+                        <options/>
+                     </field>
+                     <field name="first_name"
+                            nullable="true"
+                            required="false"
+                            type="string">
+                        <options/>
+                     </field>
+                     <field name="last_name" nullable="true" required="false" type="string">
+                        <options/>
+                     </field>
+                  </detail>
+               </processObject>
+            </objects>
+         </businessConnector>
+      </types1:Entry>
+      <types1:GUID>17sAkN79bXqcwQ5ZZJCJEL</types1:GUID>
+      <types1:DisplayName>ServiceConnector_Webservice_test</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2025-03-11T08:37:19.71Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
